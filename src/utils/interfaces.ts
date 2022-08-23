@@ -1,3 +1,5 @@
+import { Dispatch, SetStateAction } from "react";
+
 export interface Fetch {
   method: string;
   headers: {
@@ -13,4 +15,22 @@ export interface ExerciseInt {
   id: string;
   name: string;
   target: string;
+}
+
+export interface ExercisesProps {
+  bodyPart: string;
+  setExercises: Dispatch<SetStateAction<ExerciseInt[]>>;
+  setBodyPart: Dispatch<SetStateAction<string>>;
+}
+
+export interface HorizontalScrollbarProps {
+  data: string[];
+  bodyPart: string;
+  setBodyPart: Dispatch<SetStateAction<string>>;
+}
+
+export interface BodyPartProps {
+  item: string;
+  bodyPart: string;
+  setBodyPart: Dispatch<SetStateAction<string>>;
 }
