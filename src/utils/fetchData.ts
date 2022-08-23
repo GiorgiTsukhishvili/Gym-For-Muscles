@@ -1,10 +1,4 @@
-interface Fetch {
-  method: string;
-  headers: {
-    "X-RapidAPI-Key": string;
-    "X-RapidAPI-Host": string;
-  };
-}
+import { Fetch } from "./interfaces";
 
 export const exerciseOptions: Fetch = {
   method: "GET",
