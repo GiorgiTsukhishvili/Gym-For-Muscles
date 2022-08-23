@@ -34,3 +34,18 @@ export interface BodyPartProps {
   bodyPart: string;
   setBodyPart: Dispatch<SetStateAction<string>>;
 }
+
+export interface ExercisesElementProps {
+  bodyPart: string;
+  setExercises: Dispatch<SetStateAction<ExerciseInt[]>>;
+  exercises: ExerciseInt[];
+}
+
+export interface ExerciseCardProps {
+  bodyPart: string;
+  equipment: string;
+  gifUrl: string;
+  id: string;
+  name: string;
+  target: string;
+}
