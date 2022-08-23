@@ -3,8 +3,6 @@ import React from "react";
 import { Box } from "@mui/material";
 import { v4 as uuid } from "uuid";
 
-import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
-
 import { HorizontalScrollbarProps } from "../utils/interfaces";
 
 import BodyPart from "./BodyPart";
