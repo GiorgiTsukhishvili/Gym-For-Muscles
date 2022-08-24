@@ -33,8 +33,6 @@ const SearchExercises = ({
         exerciseOptions
       );
 
-      console.log(exerciseData);
-
       const searchedExercises = exerciseData.filter(
         (exercise: ExerciseInt) =>
           exercise.name.toLowerCase().includes(search) ||
