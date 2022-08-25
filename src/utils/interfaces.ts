@@ -58,3 +58,23 @@ export interface ExerciseDetailProps {
   name: string;
   target: string;
 }
+
+interface YoutubeInner {
+  height: number;
+  url: string;
+  width: number;
+}
+
+export interface YoutubeData {
+  video: {
+    channelId: string;
+    channelName: string;
+    description: string;
+    lengthText: string;
+    publishedTimeText: string;
+    thumbnails: YoutubeInner[];
+    title: string;
+    videoId: string;
+    viewCountText: string;
+  };
+}
