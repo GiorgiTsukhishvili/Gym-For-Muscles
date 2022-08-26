@@ -7,13 +7,13 @@ import { exerciseOptions, fetchData, youtubeOptions } from "../utils/fetchData";
 
 import ExerciseVideos from "../components/ExerciseVideos";
 import Detail from "../components/Detail";
-import SimilarExercises from "../components/SimilarExercises";
 
 import { ExerciseDetailProps, YoutubeData } from "../utils/interfaces";
 
 const ExerciseDetail = () => {
   const [exercieseDetail, setExerciseDetail] = useState<ExerciseDetailProps>();
   const [exerciseVideos, setExerciseVideos] = useState<YoutubeData[]>([]);
+
   const { id } = useParams();
 
   useEffect(() => {
@@ -51,7 +51,6 @@ const ExerciseDetail = () => {
       ) : (
         ""
       )}
-      <SimilarExercises />
     </Box>
   );
 };
